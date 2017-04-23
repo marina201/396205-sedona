@@ -5,8 +5,8 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-      <header class="catalogue-header">
-            <div class="catalogue-container">
+      <div class="center">
+        <header class="catalogue-header">
               <nav class="catalogue-navigation">
                   <ul>
                       <li>
@@ -16,7 +16,7 @@
                         <a href="#">Фото и видео</a>
                       </li>
                       <li>
-                          <a href="#"><img src="#" alt="логотип"></a>
+                          <a href="#"><img src="#" alt="логотип Sedona"></a>
                       </li>
                       <li>
                         <a href="#">Карта штата</a>
@@ -26,59 +26,60 @@
                       </li>
                     </ul>
               </nav>
-            </div>
-      </header>
+        </header>
       <main class="catalogue-container">
         <section class="filter">
-          <fildset>
-            <legend>Инфраструктура:</legend>
-              <input type="checkbox" name="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
-              <input type="checkbox" name="wi-fi" id="wi-fi">
-              <label for="wi-fi">wi-fi</label>
-          </fildset>
-          <fildset>
-            <legend>Тип жилья:</legend>
-              <input type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">гостиница</label>
-              <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Мотель</label>
-              <input type="checkbox" name="apartments" id="apartments" checked>
-              <label for="apartments">Апартаменты</label>
-          </fildset>
-          <fildset>
-            <legend>Стоимость в сутки (р.):</legend>
-              <div>
-                <input type="text">
-<!--                  не знаю, какой здесь должен быть id и что писать между <label><label>-->
-                <label for="min"></label>
-                <input type="text">
-                <label for="max"></label>
-              </div>
-              <div class="range">
-                <div class="scale"></div>
-                <a href="" class="min"></a>
-                <a href="" class="max"></a>
-              </div>
-          </fildset>
-          <div class="result">
-            <div>Найдено 3</div>
-            <div class="sorting">
-              <span>Сортировка:</span>
-              <ul>
-                <li>по цене</li>
-                <li>по типу</li>
-                <li>по рейтингу</li>
-              </ul>
-            </div>
-            <div>
-              <a href=""></a>
-              <a href=""></a>
-            </div>
+          <form class="filter-form" action="#" method="get">
+                <fildset>
+                    <legend>Инфраструктура:</legend>
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking">Парковка</label>
+                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <label for="wi-fi">wi-fi</label>
+                </fildset>
+                <fildset>
+                    <legend>Тип жилья:</legend>
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <label for="hotel">гостиница</label>
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <label for="motel">Мотель</label>
+                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <label for="apartments">Апартаменты</label>
+                </fildset>
+                <fildset>
+                    <legend>Стоимость в сутки (р.):</legend>
+                    <div>
+                        <input type="text" id="min-field">
+                        <label for="min-field">от</label>
+                        <input type="text" id="max-field">
+                        <label for="max-field">до</label>
+                    </div>
+                    <div class="range">
+                        <div class="scale"></div>
+                        <a href="" class="min"></a>
+                        <a href="" class="max"></a>
+                    </div>
+                </fildset>
               <input type="submit" name="hotel-price" id="hotel-price" value="Показать">
-          </div>
+            </form>
+            <div class="result">
+                <div>Найдено 3</div>
+                <div class="sorting">
+                    <span>Сортировка:</span>
+                    <ul>
+                        <li><a href="#">по цене</a></li>
+                        <li><a href="#">по типу</a></li>
+                        <li><a href="#">по рейтингу</a></li>
+                    </ul>
+                </div>
+                <div class="change">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+          </section>
           <section class="hotels">
             <article class="hotels-item">
                 <img src="#" alt="фотография отеля">
@@ -111,34 +112,21 @@
                 </div>
             </article>
           </section>
-          </section>
-      </main>
-      <footer>
-        <div class="container">
-            <section class="#">
+        </main>
+          <footer>
+            <section class="link">
                 <a href="#">#Visitsedona</a>
             </section>
             <section class="footer-social">
-            <a class="social-btn social-btn-twitter" href="#">
-              <img src="#" alt="Twitter">
-            </a>
-            <a class="social-btn social-btn-fb" href="#">
-              <img src="#" alt="Facebook">
-            </a>
-            <a class="social-btn social-btn-youtube" href="#">
-              <img src="#" alt="Youtube">
-            </a>
+                <a class="social-btn social-btn-twitter" href="#"></a>
+                <a class="social-btn social-btn-fb" href="#"></a>
+                <a class="social-btn social-btn-youtube" href="#"></a>
             </section>
-            <section class="footer-copyright">
-                <address>Website by
-                    <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="#" alt="HTML Academy">
-                    </a>
-                html<br>
-                academy
-                </address>
-            </section>
-        </div>
-      </footer>
+            <address class="copyright">
+                Website by
+                <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+            </address>
+          </footer>
+      </div>
     </body>
 </html>
