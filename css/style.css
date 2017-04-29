@@ -1,0 +1,51 @@
+body {
+
+}
+
+li {font-size: 14px; font-family: sans-serif; font-weight: 400; line-height: 26px; color: black;}
+
+h1 {font-size: 21px; font-family: sans-serif; font-weight: 700; line-height: 26px; color: black;
+    
+}
+
+.features p {font-size: 14px; font-family: sans-serif; font-weight: 100; line-height: 26px; color: black;
+    
+}
+
+.feature h2 {font-size: 21px; font-family: sans-serif; font-weight: 700; line-height: 26px; color: white;
+}
+
+.feature p {font-size: 14px; font-family: sans-serif; font-weight: 100; line-height: 26px; color: white;
+}
+
+.feature-list h2 {font-size: 21px; font-family: sans-serif; font-weight: 700; line-height: 26px; color: black;
+    
+}
+
+.feature-list p {font-size: 14px; font-family: sans-serif; font-weight: 100; line-height: 26px; color: black;
+    
+}
+
+.feature .photo1 {background-image: url("/img/index/Layer%2010.png"); repeat: no-repeat;
+}
+
+.feature .photo2 {background-image: url("/img/index/layer-5.png"); repeat: no-repeat;
+}
+
+.appointment-title {font-size: 30px; line-height: 35px; color: black; font-weight: bold; font-family: sans-serif;}
+
+.appointment p {font-size: 14px; line-height: 24px; color: black; font-weight: 100; font-family: sans-serif;}
+
+.appointment a {font-size: 21px; line-height: 26px; color: white; font-weight: bold; font-family: sans-serif;}
+
+.search-form {font-size: 14px; line-height: 26px; color: black; font-weight: 100; font-family: sans-serif;}
+
+.search-form .search {font-size: 21px; line-height: 26px; color: white; font-weight: bold; font-family: sans-serif;}
+
+footer.link {font-size: 21px; line-height: 26px; color: black; font-weight: bold; font-family: sans-serif;}
+
+footer.copyright {font-size: 14; line-height: 26px; color: black; font-weight: 100; font-family: sans-serif;}
+
+#adults-quantity, #children-quantity {background: url("/img/index/minus.png") no-repeat left center, url("/img/index/plus.png") no-repeat right center; }
+
+#arrival-date, #departure-date {background: url("/img/index/calendar.png") no-repeat right center}
