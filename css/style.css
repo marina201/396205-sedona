@@ -11,16 +11,8 @@ h2 {
     font-size: 21px; 
 }
 
-.desc a + a + span {
-    background-color: rgb(242,242,242);
-}
-
-.desc span + a {
-    background-color: rgb(129,179,210);
-}
-
-.desc a + a {
-    background-color: rgb(118,99,87);
+h2 {
+    line-height: 21px;
 }
 
 .feature .photo1 {
