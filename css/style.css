@@ -15,12 +15,117 @@ h2 {
     line-height: 21px;
 }
 
-.feature .photo1 {
-    background-image: url("../img/Layer 10.jpg") no-repeat;
+
+.center {
+    width: 1200;
+    padding: 0px 40px;
 }
 
-.feature .photo2 {
+.catalogue-header {
+    width: 1200px;
+    min-height: 70px;
+}
+
+li {
+    width: 230px;
+    float: left;
+    text-align: center;
+}
+
+.logo {
+    width: 240px;
+    float: left;
+    text-align: center;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+}
+
+.main-view {
+    width: 1200px;
+    height: 780px;
+    margin-bottom: auto;
+}
+/*здесь должна появиться картинка img/Shape 1 copy 3.png, но она не появляется*/
+
+.features {
+    height: 1314 px;
+}
+
+.features header {
+    text-align: center;
+    vertical-align: middle;
+    height: 209px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    padding-left: 364px;
+    padding-right: 364px;
+}
+
+.feature {
+    height: 256;
+}
+
+.feature .text-left {
+    float: left;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 54px;
+    padding-bottom: 42px;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+/*здесь должна отображаться картинка, но она не отображается почему-то*/
+.photo1 {
+    background-image: url("../img/Layer 10.jpg") no-repeat;
+    width: 800px;
+    height: 256px;
+    float: right;
+}
+
+
+
+/*здесь должна отображаться картинка, но она не отображается почему-то*/
+.photo2 {
     background-image: url("../img/Layer 5.jpg") no-repeat;
+    width: 800px;
+    height: 256px;
+    float: left;
+}
+
+.feature .text-right {
+    float: right;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 54px;
+    padding-bottom: 42px;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.feature-list {
+    min-height: 257px;
+}
+
+.item {
+    float: left;
+    width: 262px;
+    padding-left: 69px;
+    padding-right: 69px;
+    padding-top: 50px;
+    padding-bottom: 64px;
+    text-align: center;
 }
 
 .calendar {
