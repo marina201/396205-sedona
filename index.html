@@ -7,9 +7,9 @@
   </head>
   <body>
       <div class="center">
-        <header class="catalogue-header clearfix">
-            <nav class="catalogue-navigation">
-                <ul>
+        <header class="catalogue-header">
+            <nav class="catalogue-navigation clearfix">
+                <ul class="main-menu main-menu-left clearfix">
                   <li>
                     <a href="#">Информация</a>
                   </li>
@@ -20,7 +20,7 @@
                 <div class="logo">    
                     <img src="img/logo Sedona.png" width="138" height="70" alt="логотип Sedona">
                 </div>
-                <ul>
+                <ul class="main-menu main-menu-right clearfix">
                   <li>
                     <a href="#">Карта штата</a>
                   </li>
@@ -32,8 +32,7 @@
         </header>
         <main class="container">
             <section class="main-view">
-                <img src="img/Welcome-to-the-gorgeous-Sedona.jpg" width="1200" height="780" alt="Welcome to the gorgeous Sedona">
-                <img src="img/Shape 1 copy 3.png" width="1200" height="57">
+                <img src="img/intro.jpg" width="1200" height="509" alt="Welcome to the gorgeous Sedona">
             </section>
             <section class="features">
                 <header>
@@ -104,25 +103,31 @@
                     </p>
                 </header>
                 <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
-                    <div class="form">
-                        <form class="search-form" action="#" method="get">
+                <div class="form">
+                    <form class="search-form" action="#" method="get">
+                        <div class="calendar">    
                             <label for="arrival-date">Дата заезда</label>
-                            <input class="calendar" type="text" name="date" id="arrival-date" value="24 апреля 2016">
+                            <input type="text" name="date" id="arrival-date" value="24 апреля 2016">
+                        </div>    
+                        <div class="calendar">    
                             <label for="departure-date">Дата выезда</label>
-                            <input class="calendar" type="text" name="date" id="departure-date" value="4 июля 2016">
+                            <input type="text" name="date" id="departure-date" value="4 июля 2016">
+                        </div>
+                        <div class="quantity-area">    
                             <label for="adults-quantity">Взрослые</label>
                             <input type="text" name="quantity" id="adults-quantity" value="2">
                             <label for="children-quantity">Дети</label>
                             <input type="text" name="quantity" id="children-quantity" value="0">
+                        </div>
                             <input class="search" type="submit" value="Найти">
-                        </form>
-                    </div>
+                    </form>
+                </div>
                 <div class="maps">
                     <img src="img/map.jpg" width="1200" height="593" alt="google map">
                 </div>
         </section>  
       </main>
-      <footer>
+      <footer class="clearfix">
             <section class="link">
                 <a href="#">#Visitsedona</a>
             </section>
