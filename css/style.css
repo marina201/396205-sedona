@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: black;
@@ -47,10 +47,9 @@ h2 {
     text-align: center;
 }
 
-/*лого все равно не свисает*/
-
 .logo {
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 50%;
     margin-left: -120px;
@@ -65,7 +64,10 @@ h2 {
 }
 
 .main-view {
+    height: 509px;
     position: relative;
+    z-index: 1;
+    background: url("../img/intro-2.jpg") no-repeat 0px -55px;
 }
 
 .main-view::after {
@@ -76,6 +78,7 @@ h2 {
     position: absolute;
     left: 0;
     bottom: 0;
+    background-color: cyan;
 }
 
 .features header {
@@ -86,6 +89,7 @@ h2 {
     padding-bottom: 50px;
     padding-left: 364px;
     padding-right: 364px;
+    background-color: beige;
 }
 
 .feature .text-left {
@@ -247,30 +251,22 @@ h2 {
 }
 
 .social-btn {
-    background-color: #81b3d2;
-    display: block;
-    height: 15px;
-    width: 150px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #82b3d2 url("../img/social-icon-twitter.png") no-repeat center center;
 }
 
-/*не получается сделать иконки соц. сетей*/
-
-.social-btn .social-btn-twitter {
-    background-image: url("../img/social-icon-twitter.png");
-    width: 17px;
-    height: 15px;
-}
-
-.social-btn .social-btn-fb {
+.social-btn-fb {
     background-image: url("../img/social-icon-fb.png");
-    width: 10px;
-    height: 19px;
 }
 
-.social-btn .social-btn-youtube {
+.social-btn-youtube {
     background-image: url("../img/social-icon-youtube.png");
-    width: 20px;
-    height: 16px;
+}
+
+.footer-social {
+    font-size: 0;
 }
 
 .copyright {
