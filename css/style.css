@@ -1,15 +1,16 @@
 body {
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
     line-height: 26px;
+    text-transform: uppercase;
 }
 
 h1,
 h2 {
-    font-size: 21px; 
+    font-size: 21px;
 }
 
 h2 {
@@ -78,29 +79,37 @@ h2 {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: cyan;
 }
 
 .features header {
     text-align: center;
     vertical-align: middle;
-    height: 209px;
-    padding-top: 65px;
+    height: 122px;
+    padding-top: 43px;
     padding-bottom: 50px;
-    padding-left: 364px;
-    padding-right: 364px;
-    background-color: beige;
+    padding-left: 353px;
+    padding-right: 357px;
+}
+
+.features header p {
+    margin-top: 30px;
 }
 
 .feature .text-left {
     float: left;
-    width: 300px;
+    width: 288px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 54px;
+    padding-top: 30px;
     padding-bottom: 42px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.feature .text-left h2 {
     padding-left: 47px;
     padding-right: 47px;
+    padding-bottom: 8px;
 }
 
 .photo1 {
@@ -119,26 +128,36 @@ h2 {
 
 .feature .text-right {
     float: right;
-    width: 300px;
+    width: 288px;
     text-align: center;
     padding-top: 54px;
     padding-bottom: 42px;
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-left: 56px;
+    padding-right: 56px;
 }
 
-.feature-list {
-    min-height: 257px;
+.feature .text-right h2 {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 8px;
 }
 
 .feature-list .item {
     float: left;
-    width: 262px;
-    padding-left: 69px;
-    padding-right: 69px;
-    padding-top: 50px;
+    width: 304px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 145px;
     padding-bottom: 64px;
     text-align: center;
+}
+
+.item1 {
+    background-image: url("../img/feature-list-icon-1.png") no-repeat; 
+}
+
+.feature-list .item p {
+    margin-top: 25px;
 }
 
 .appointment header {
