@@ -33,6 +33,24 @@ h2 {
     padding-top: 13px;
     margin: 0;
     width: 480px;
+    list-style: none;
+}
+
+.main-menu a:hover {
+    color: #81b3d2;
+}
+
+.main-menu a:link {
+    color: black;
+}
+
+.main-menu a:active {
+    color: black;
+    opacity: 0.3;
+}
+
+.main-menu .active a {
+    color: #766357;
 }
 
 .main-menu-left {
@@ -74,7 +92,7 @@ h2 {
     height: 509px;
     position: relative;
     z-index: 1;
-    background: url("../img/intro-2.jpg") no-repeat 0px -55px;
+    background: url("../img/intro.jpg") no-repeat 0px -55px;
 }
 
 .main-view::after {
@@ -241,6 +259,7 @@ h2 {
     color: white;
     background-color: #766357;
     text-align: center;
+    text-decoration: none;
 }
 
 .search-form {
@@ -266,9 +285,20 @@ h2 {
     padding: 10px 0;
     padding-left: 10px;
     font-family: "PT Sans", "Arial" sans-serif;
-    background: url("../img/search-calendar.png") no-repeat 310px 5px;
+    background: #f2f2f2 url("../img/sprite-search-calendar.png") no-repeat 310px 5px;
     background-color: #f2f2f2;
+    cursor: pointer;
     float: right;
+}
+
+.arrival input:hover {
+    background-position: 310px -33px;
+    background-color: #ebebeb;
+}
+
+.arrival input:active {
+    background-position: 310px -72px;
+    background-color: #ffffff;
 }
 
 .departure label {
@@ -284,9 +314,20 @@ h2 {
     padding: 10px 0;
     padding-left: 10px;
     font-family: "PT Sans", "Arial" sans-serif;
-    background: url("../img/search-calendar.png") no-repeat 310px 8px;
+    background: #f2f2f2 url("../img/sprite-search-calendar.png") no-repeat 310px 8px;
     background-color: #f2f2f2;
+    cursor: pointer;
     float: right;
+}
+
+.departure input:hover {
+    background-position: 310px -31px;
+    background-color: #ebebeb;
+}
+
+.departure input:active {
+    background-position: 310px -70px;
+    background-color: #ffffff;
 }
 
 .calendar {
@@ -312,9 +353,34 @@ h2 {
     margin-right: 30px;
 }
 
-.quantity-area button {
+.quantity-area .left {
     padding: 10px 13px;
+    background: #f2f2f2 url("../img/sprite-quantity-area-button.png") no-repeat 10px 10px;
+    color: lightgrey;
 }
+
+.quantity-area .left:hover {
+    background-position: 10px -28px;
+}
+
+.quantity-area .left:active {
+    background-position: 10px -66px;
+}
+
+.quantity-area .right {
+    padding: 10px 13px;
+    background: #f2f2f2 url("../img/sprite-quantity-area-button.png") no-repeat -65px 10px;
+    color: lightgrey;
+}
+
+.quantity-area .right:hover {
+    background-position: -65px -28px;
+}
+
+.quantity-area .right:active {
+    background-position: -65px -66px;
+}
+
 .quantity-area input {
     padding: 10px;
     width: 20px;
@@ -335,13 +401,17 @@ h2 {
 .search-form .search {
     margin-top: 56px;
     margin-left: 2px;
-    padding: 17px 193px;
-    background-color: #81b3d2;
-    color: white;
-    font-size: 21px;
-    font-weight: 700;
-    font-family: "PT Sans", "Arial", sans-serif;
+    padding: 19px 227px;
+    background: url("../img/sprite-search-form-input-search.png") no-repeat 0px 0px;
     cursor: pointer;
+}
+
+.search-form .search:hover {
+    background-position: 0px -70px;
+}
+
+.search-form .search:active {
+    background-position: 0px -141px;
 }
 
 .maps {
@@ -381,15 +451,43 @@ h2 {
     height: 47px;
     width: 46px;
     margin: 0px 3px;
-    background: #82b3d2 url("../img/social-icon-twitter.png") no-repeat center center;
+    background: url("../img/sprite-social.png") no-repeat center;
+}
+
+.social-btn-twitter {
+    background-position: 0px 0px;
+}
+
+.social-btn-twitter:hover {
+    background-position: 0px -56px;
+}
+
+.social-btn-twitter:active {
+    background-position: 0px -114px;
 }
 
 .social-btn-fb {
-    background-image: url("../img/social-icon-fb.png");
+    background-position: -51px 0px;
+}
+
+.social-btn-fb:hover {
+    background-position: -51px -56px;
+}
+
+.social-btn-fb:active {
+    background-position: -51px -114px;
 }
 
 .social-btn-youtube {
-    background-image: url("../img/social-icon-youtube.png");
+    background-position: -104px 0px;
+}
+
+.social-btn-youtube:hover {
+    background-position: -104px -56px;
+}
+
+.social-btn-youtube:active {
+    background-position: -104px -114px;
 }
 
 .footer-social {
@@ -400,12 +498,24 @@ h2 {
     width: 400px;
     text-align: center;
     float: right;
+    margin-top: 40px;
 }
 
 .copyright .website {
-    vertical-align: 20px;;
+    vertical-align: 20px;
 }
 
-.copyright img {
-    margin-top: 40px;
+.copyright .btn {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: url("../img/sprite-html-academy-logo.png") no-repeat 10px 0;
+}
+
+.copyright .btn:hover {
+    background: url("../img/sprite-html-academy-logo.png") no-repeat 10px -48px;
+}
+
+.copyright .btn:active {
+    background: url("../img/sprite-html-academy-logo.png") no-repeat 10px -96px;
 }
